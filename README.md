@@ -7,12 +7,15 @@ The algebras constructed are accompanied with lots of information. For an algebr
 We also provide functions to check certain elements have Jordan or Monster fusion laws. 
 
 For example, we check that the algebra M21 (See Bin(M21) in the thesis) has a primitive M(2,1/2)-axis. 
+
 gap> F:=Rationals;;
+
 gap> A:=M21(F);;
+
 gap> a0:=[1,0,0,0,0,0,0];;
-gap> a1:=[0,0,1,0,0,0,0];;
-gap> a2:=[0,0,0,0,1,0,0];;
+
 gap> MonsterCheck(A,a0,2,1/2);
+
 Primitive Monster axis
 
 We also add some functions on calculating the orthogonal complement with respect to the Frobenius form. 
